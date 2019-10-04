@@ -1,0 +1,198 @@
+body{
+    font-family: 'Vidaloka', serif;
+}
+
+html{
+    position: relative;
+    min-height: 100vh;
+}
+
+.jumbotron{
+    background-image: url(../sunflower-blue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    background-position: bottom;
+    color: white;
+    margin: 0px;
+}
+
+.lead{
+    font-weight: bold; 
+    color: white;
+    text-shadow: 3px 3px rgba(0, 0, 0, 1);
+
+}
+
+.copyright{
+    font-weight: bold;
+    color: black;
+}
+
+.navbar{
+    background-color: rgb(248, 210, 53);
+}
+
+a, .navbar-toggler {
+    color: rgb(55, 136, 179);
+    text-decoration: underline;
+
+}
+
+a:hover{
+    color: rgb(55, 136, 179);
+}
+.navbar-toggler {
+    border: 1px solid rgb(55, 136, 179);
+}
+.navbar #navbarNav{
+    text-align: right;
+}
+.active, .active:hover {
+    color:rgb(55, 136, 179);
+    border: 1px rgb(55, 136, 179) solid;
+    text-decoration: none;
+}
+
+.profile{
+    border-radius: 50%;
+    width: 75%;
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-delay: .5s;
+    animation-timing-function: ease-in-out;
+}
+
+ .main{
+    max-width: 100%;
+    background-image: url(../sunflower-white.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.about{
+    color: black;
+    font-weight: bold;
+    padding: 25px 0;
+}
+
+.jumbotron .container .display-4{
+    font-family: 'Vibes';
+    text-shadow: 1px 1px rgba(0, 0, 0, 1);
+}
+
+.portfolio-image{
+    width: 100%;
+}
+
+.logo{
+    width: 100%;
+}
+
+.main-content{
+    background-color: rgba(225, 225, 225, .6);
+    color: black;
+}
+
+.resume h3 {
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+    margin-bottom: 0;
+    color:black;
+}
+
+.resume h4 a{
+    font-size: 1rem;
+    letter-spacing: .1rem;
+}
+
+.resume h5{
+    font-size: .9rem;
+}
+
+.resume h6 {
+    font-size: .75rem;
+}
+
+span{
+    font-weight: bold;
+    letter-spacing: .05rem;
+    font-size: .9rem;
+    color:rgb(55, 136, 179);
+}
+
+.skills, .orgs, .volunteer{
+    color: black;
+}
+
+li{
+    list-style: none;
+    font-size: .9rem;
+}
+
+.small-font{
+    font-weight: normal;
+    font-size: .8rem;
+    color: black;
+}
+
+
+footer {
+    border-top: 5px rgb(55, 136, 179) solid;
+    background-color: rgb(248, 210, 53);
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: black;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.picCard{
+    perspective: 500px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border: none;
+}
+
+.content{ 
+    position: relative;
+    height: 15rem;
+    width: 15rem;
+    box-shadow: 0 0 15px rgba(243, 216, 216, 0.1);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.picCard:hover .content {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
+
+.front, .back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 15rem;
+    text-align: center;
+    backface-visibility: hidden;
+    font-size: 2rem;
+    border-radius: 5px;
+    text-shadow: 1px 1px rgba(225, 225, 255, 1);
+}
+
+.back{
+    color: rgb(55, 136, 179);
+    background-color: rgb(248, 210, 53);
+    transform: rotateY(180deg);
+    font-size: 1rem;
+} 
+
+/* animations */
+@keyframes spin {
+    0% {transform: translateX(2000px) rotate(0turn);}
+    100% {transform: translateX(0px) rotate(-4turn);}
+}
