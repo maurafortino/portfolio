@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>maura fortino</title>
+
+<link href="bootstrap.css" type="text/css" rel="stylesheet">
+<link href="style_sheet.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
+	</head>
+<body>
+<div class="container">
+		<h1><a href="home_page.html" class="homeLink">maura fortino.</a></h1>
+		<nav class="navbar">
+			<div class="navbar__main">
+				<a href="home_page.html" class="navbar__main--Links, active" act>home.</a>
+				<a href="resume.html" class="navbar__main--Links">resume.</a>
+				<div class="navbar__dropdown">
+					<button class="navbar__dropdown--list" onClick="myFunction()"><a href="#">portfolio.</a>
+						<div class="dropdown-content" id="myDropdown">
+							<a href="#">social.</a>
+							<a href="content.html">content.</a>
+							<a href="events.html">events.</a>
+							<a href="#">web design.</a>
+							<a href="https://www.redbubble.com/people/maurafortino/portfolio?asc=u" target="_blank">illustrations.</a>
+							<a href="https://maurafortino.tumblr.com/" target="_blank">blog.</a>
+						</div>
+					</button>
+				</div>
+				<a href="contact.html" class="navbar__main--Links">contact.</a>
+			</div>
+		</nav>
+		
+
+
+	<div class="container__image">
+		<img 
+			 class="profile"
+			 src="photos/profilepic.jpg"
+			 alt="a picture of my face"
+			 />
+	</div>
+	
+	<div class="container__mobile">
+		<img 
+			 class="mobileProfile"
+			 src="photos/mobileProfile.jpg"
+			 alt="a picture of my face"
+		 />
+	</div>
+
+	<div class="container__about">
+		<p>Hey, my name is Maura -- in case you couldn't tell from the website. I began coding in 2017 with the ultimate goal of creating my own website to show off my portfolio. I have a background in communications and marketing, with extensive experience in social media, event planning, market research, and project management.
+		<br>
+		<br>
+		I'm currently located in Philadelphia working in the fundraising and development office at Thomas Jefferson University. In my free time you can find me improving upon my coding skills, learning graphic design, reading, or travelling. I am also applying to grad school where I hope to pursue my Masters in Media Studies and increase my knowledge of how media representations matter. Click on the above links to learn more about me and my work.</p>
+
+	</div>
+	
+	<div class="container__footer">
+		<div class="footerLinks">
+			<h6>links</h6>
+				<a href="home_page.html">home</a>
+				<a href="resume.html">resume</a>
+				<a href="contact.html">contact</a>
+				<a href="#" class="hidden">social</a>
+				<a href="content.html">content</a>
+				<a href="events.html">events</a>
+				<a href="#" class="hidden">web design</a>
+				<a href="https://www.redbubble.com/people/maurafortino/portfolio?asc=u" target="_blank">illustrations</a>
+				<a href="https://maurafortino.tumblr.com/" class="hidden" target="_blank">blog</a>
+		</div>
+		<p>&copy; maura fortino 2018.</p>
+	</div>
+</div>
+	
+<script>
+	function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show")
+  }
+	</script>
+</body>
+</html>
+	

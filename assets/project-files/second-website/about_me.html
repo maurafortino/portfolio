@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>maura fortino</title>
+	
+<link href="bootstrap.css" type="text/css" rel="stylesheet">
+<link href="style_sheet.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<h1><a href="home_page.html" class="homeLink">maura fortino.</a></h1>
+		<nav class="navbar">
+			<div class="navbar__main">
+				<a href="home_page.html" class="navbar__main--Links">home.</a>
+				<a href="about_me.html" class="navbar__main--Links">about.</a>
+				<div class="navbar__dropdown">
+					<button class="navbar__dropdown--list" onClick="myFunction()"><a href="#">portfolio.</a>
+						<div class="dropdown-content" id="myDropdown">
+							<a href="#">social.</a>
+							<a href="#">content.</a>
+							<a href="#">events.</a>
+							<a href="#">web design.</a>
+							<a href="#">illustrations.</a>
+							<a href="#">blog.</a>
+						</div>
+					</button>
+				</div>
+				<a href="contact.html" class="navbar__main--Links">contact.</a>
+			</div>
+		</nav>
+		<h2 class="about__title">10 things to not hate about me</h2>
+		<div class="about__photo">
+			<img class="ireland"
+				 src="About Me.jpg"
+				 alt="a photo of me at the Cliffs of Moher in Ireland">
+		</div>
+		<div class="about__list">
+			<ol class="about">
+			<li>I love to travel and hope to travel to all fifty states before I turn fifty.</li>
+			<li>I have an obessesion with pugs and own about twenty-five articles of clothing dedicated to their squishy faces.</li>
+			<li>Being from Philly, naturally I am a Philly sports fan - this may be one reason to hate me.</li>
+			<li>I played soccer for seventeen years, including in college.</li>
+			<li>A personal acheivement I am most proud of is making Scholar All-America my senior year of college.</li>
+			<li>In the summer of 2017, I lived in Spain working as a nanny to improve my Spanish - it was one of the best times of my life. I can't wait to go back one day.</li>
+			<li>I believe you can get out of any awkward situtation by using finger guns.</li>
+			<li></li>
+			</ol>
+		</div>
+		
+	<div class="container__footer">
+		<p>Copyright &copy; maura fortino 2018.</p>
+	</div>
+		
+	</div>
+<script>
+	function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show")
+  }
+	</script>
+</body>
+</html>

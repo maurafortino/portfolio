@@ -224,6 +224,7 @@ footer {
     border: none;
     background: rgb(55, 136, 179);
     color: rgb(248, 210, 53);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 /* animations */
 @keyframes spin {
