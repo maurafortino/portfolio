@@ -20,13 +20,13 @@ var upennArray = [
     {
         img: "assets/spiderman.png",
         description: "A role-playing game that showcases my knowledge of JQuery. In the game a user chooses a character as their hero and then chooses an enemy to defeat. Once the user defeats all enemies they win the game, if they don't defeat all enemies, they lose. Once the game is over the user has an option to play again.",
-        link: "assets/project-files/rpg/role-playing-game/rpg.html",
+        link: "https://maurafortino.github.io/role-playing-game/",
         name: "Role Playing Game"
     },
     {
         img:"assets/weatherly.png",
         description: "An app that outputs various food and drink recipes based on the weather. This was a group project in which I worked on making the ajax calls for the food API.",
-        link: "assets/project-files/project-weatherly/weatherly.html",
+        link: "https://maurafortino.github.io/project-weatherly/",
         name: "wEATherly"
     },
     {
