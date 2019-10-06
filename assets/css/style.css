@@ -197,6 +197,7 @@ footer {
     background-color: rgb(248, 210, 53);
     transform: rotateY(180deg);
     font-size: 1.5rem;
+    backface-visibility: hidden;
 } 
 
 #upenn{
