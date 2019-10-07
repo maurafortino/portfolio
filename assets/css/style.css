@@ -203,6 +203,7 @@ footer {
     line-height: 15rem;
     text-align: center;
     backface-visibility: hidden;
+    -webkit-backface-visibility:hidden;
     font-size: 2rem;
     border-radius: 5px;
 }
@@ -218,6 +219,7 @@ footer {
     -ms-transform: rotateY(180deg);
     font-size: 1.5rem;
     backface-visibility: hidden;
+    -webkit-backface-visibility:hidden;
 } 
 
 .illustration-image{
@@ -230,6 +232,7 @@ footer {
     width: 100%;
     text-align: center;
     backface-visibility: hidden;
+    -webkit-backface-visibility:hidden;
     border-radius: 5px;
 }
 
@@ -244,6 +247,7 @@ footer {
     -ms-transform: rotateY(180deg);
     font-size: 1rem;
     backface-visibility: hidden;
+    -webkit-backface-visibility:hidden;
 } 
 
 #upenn{
