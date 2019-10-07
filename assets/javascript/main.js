@@ -97,52 +97,52 @@ var personalArray = [
 ];
 var popArray = [
     {
-        link: "assets/illustrations/StrangerThings1.png",
-        description: "I created this illustration after the second season of Stranger Things. After the season, many people joked that Steve Harrington acted like a proud parent so I combined that with the popular meme 'Don't Talk to Me and My Son ever again.'",
-        sold: "6 stickers",
-        redbubble: "https://www.redbubble.com/people/maurafortino/works/28977051-stranger-things?asc=t",
-        alt: "a black circle with a drawing of steve harrington and dustin from Stranger Things with the quote 'Don't talk to me or my son, ever again'"
-    },
-    {
+        name: "Brooklyn 99",
         link: "assets/illustrations/b99-quote.jpg",
-        description: "Brooklyn 99 is hands down one of my favorite shows. This is a quote by Captain Holt from the fifth season and it really stuck with me. While the show is a comedy, it also does include some very touching moments.",
         sold: "100 various products (my best seller!)",
         redbubble: "https://www.redbubble.com/people/maurafortino/works/29717971-brooklyn-99?asc=t",
         alt: "a quote that says 'Everytime someone steps up and says who they are, the world becomes a better, more interesting place.'"
     },
     {
+        name: "The Aces",
         link: "assets/illustrations/the-aces.jpg",
-        description: "The aces are one of my favorite bands. They're an all girl group from Utah and seeing as their name is 'The Aces' I was inspired to draw each of them as an Ace from a deck of cards.",
         sold: "40 various products",
         redbubble: "https://www.redbubble.com/people/maurafortino/works/33051842-the-aces?asc=t",
         alt: "A minimalistic drawing of the members of The Aces each on their own Ace from a deck of cards"
     },
     {
+        name: "Shrek",
         link: "assets/illustrations/Shrek.jpg",
-        description: "Shrek is a cinemactic masterpiece. I created this illustration to honor my love for the movie and puns.",
         sold: "9 various products",
         redbubble: "https://www.redbubble.com/people/maurafortino/works/29897580-shrek?asc=t",
         alt: "A drawing of Shrek that says 'I'm OGRE the moon for you, babe'"
     },
     {
+        name: "Stranger Things",
+        link: "assets/illustrations/StrangerThings1.png",
+        sold: "6 stickers",
+        redbubble: "https://www.redbubble.com/people/maurafortino/works/28977051-stranger-things?asc=t",
+        alt: "a black circle with a drawing of steve harrington and dustin from Stranger Things with the quote 'Don't talk to me or my son, ever again'"
+    },
+    {
+        name: "Jonathan Van Ness",
         link: "assets/illustrations/JVN.jpg",
-        description: "Queer Eye's Johnathan Van Ness is easily one of the most positivie people. He has some of the best quotes and I decided to pay homage to them with this illustration.",
         sold: "17 various products",
         redbubble: "https://www.redbubble.com/people/maurafortino/works/35371505-jonathan-van-ness-quotes?asc=t",
-        alt: "A minimalstic drawing of Jonthan Van Ness with his quotes surrounding him in rainbow colors"
+        alt: "A minimalstic drawing of Jonathan Van Ness with his quotes surrounding him in rainbow colors"
     }
 ];
 
 var scArray = [
     {
         link: "assets/illustrations/sc-mummin.png",
-        description: "My parents host a New Years Day part every year for the Mummer's Parade. In 2018, I created two snapchat filters for the party. This is one of them.",
-        alt: "An image of my friend and I on Mummer's Day with a Mummer's Day snapchat filter that says 'Mummin is a habit'"
+        alt: "An image of my friend and I on Mummer's Day with a Mummer's Day snapchat filter that says 'Mummin is a habit'",
+        name: "New Years Day 2018 - Mummer's Parade"
     },
     {
         link: "assets/illustrations/sc-mummers-day.png",
-        description: "This was the second option for the 2018 Mummer's Day Parade filters.",
-        alt: "An image of my sister and her three friends on Mummer's Day with a Mummer's Day snapchat filter that says 'The First with the Fortions, We got it from our Mummer'"
+        alt: "An image of my sister and her three friends on Mummer's Day with a Mummer's Day snapchat filter that says 'The First with the Fortions, We got it from our Mummer'",
+        name: "New Years Day 2018 - Mummer's Parade"
     }
 
 ];
@@ -253,56 +253,62 @@ function showPers() {
     };
 };
 
-function showPop() {
+function showPop() {   
     illustrationsDiv.empty();
-    var titleRow = $("<div>");
+    $("#illustrations-title").empty();
     var titleCol = $("<div>");
-    titleRow.addClass("row text-center bounceInLeft");
-    titleCol.addClass("col-12");
+    titleCol.addClass("col-12 bounceInLeft");
     titleCol.html("<h4> POP CULTURE ILLUSTRATIONS </h4>");
-    titleRow.append(titleCol);
-    illustrationsDiv.append(titleRow);
+    $("#illustrations-title").append(titleCol);
     for (var i = 0; i < popArray.length; i++) {
-        var rowDiv = $("<div>");
-        var imgCol = $("<div>");
-        var contentCol = $("<div>");
+        var columnDiv = $("<div>");
+        var contentDiv = $("<div>");
+        var cardDiv = $("<div>");
+        var frontDiv = $("<div>");
         var newImg = $("<img>");
-        rowDiv.addClass("row py-3 fadeIn");
-        imgCol.addClass("col-4");
+        var backDiv = $("<div>");
+        frontDiv.addClass("img");
         newImg.attr("src", popArray[i].link);
         newImg.attr("alt", popArray[i].alt);
         newImg.addClass("portfolio-image");
-        imgCol.append(newImg);
-        contentCol.addClass("col-8");
-        contentCol.html(popArray[i].description + "<br><br> sold:" + popArray[i].sold + "<br><br> <a href=" + popArray[i].redbubble + "target='_blank'> buy here! </a>")
-        rowDiv.append(imgCol, contentCol);
-        illustrationsDiv.append(rowDiv);
+        frontDiv.append(newImg);
+        backDiv.addClass("img-back");
+        backDiv.html(popArray[i].name + "<br> sold: " + popArray[i].sold + "<br> <a href=" + popArray[i].redbubble + ">buy here!</a>");
+        contentDiv.addClass("content");
+        contentDiv.append(frontDiv, backDiv);
+        cardDiv.addClass("picCard p-5");
+        cardDiv.append(contentDiv);
+        columnDiv.append(cardDiv);
+        illustrationsDiv.append(columnDiv);
     };
 };
 
 function showSC() {
     illustrationsDiv.empty();
-    var titleRow = $("<div>");
+    $("#illustrations-title").empty();
     var titleCol = $("<div>");
-    titleRow.addClass("row text-center bounceInLeft");
-    titleCol.addClass("col-12");
+    titleCol.addClass("col-12 bounceInLeft");
     titleCol.html("<h4> SNAPCHAT FILTERS </h4>");
-    titleRow.append(titleCol);
-    illustrationsDiv.append(titleRow);
+    $("#illustrations-title").append(titleCol);
     for (var i = 0; i < scArray.length; i++) {
-        var rowDiv = $("<div>");
-        var imgCol = $("<div>");
-        var contentCol = $("<div>");
+        var columnDiv = $("<div>");
+        var contentDiv = $("<div>");
+        var cardDiv = $("<div>");
+        var frontDiv = $("<div>");
         var newImg = $("<img>");
-        rowDiv.addClass("row py-3 fadeIn");
-        imgCol.addClass("col-4");
+        var backDiv = $("<div>");
+        frontDiv.addClass("img");
         newImg.attr("src", scArray[i].link);
         newImg.attr("alt", scArray[i].alt);
-        newImg.addClass("portfolio-image");
-        imgCol.append(newImg);
-        contentCol.addClass("col-8");
-        contentCol.text(scArray[i].description);
-        rowDiv.append(imgCol, contentCol);
-        illustrationsDiv.append(rowDiv);
+        newImg.addClass("illustration-image");
+        frontDiv.append(newImg);
+        backDiv.addClass("img-back");
+        backDiv.html(scArray[i].name);
+        contentDiv.addClass("content");
+        contentDiv.append(frontDiv, backDiv);
+        cardDiv.addClass("picCard p-5");
+        cardDiv.append(contentDiv);
+        columnDiv.append(cardDiv);
+        illustrationsDiv.append(columnDiv);
     };
 };
