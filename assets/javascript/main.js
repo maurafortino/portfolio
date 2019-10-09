@@ -52,6 +52,13 @@ var upennArray = [
         link: "https://maurafortino.github.io/train-times/",
         name: "Firebase Train Schedule",
         alt: "an image of my train schedule website"
+    },
+    {
+        img: "assets/word-guess.png",
+        description: "A hangman game I made for my first JavaScript homework assignment based on strong female characters in literature.",
+        link:"https://maurafortino.github.io/Word-Guess-Game/",
+        name: "Hangman Game",
+        alt: "an image of my hangman game"
     }
 ];
 
