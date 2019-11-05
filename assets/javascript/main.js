@@ -19,6 +19,13 @@ var portfolioArray = [
 
 var upennArray = [
     {
+        img: "assets/friend.png",
+        description: "A full stack app using JavaScript, Node, and Express. The user takes a quiz and based off their answers a friend (someone else who has also taken the quiz) is generated for them",
+        link: "https://friend-finder-14.herokuapp.com/",
+        name: "Friend Finder",
+        alt: "an image of my friend finder app"
+    },
+    {
         img: "assets/spiderman.png",
         description: "A role-playing game that showcases my knowledge of JQuery. In the game a user chooses a character as their hero and then chooses an enemy to defeat. Once the user defeats all enemies they win the game, if they don't defeat all enemies, they lose. Once the game is over the user has an option to play again.",
         link: "https://maurafortino.github.io/role-playing-game/",
