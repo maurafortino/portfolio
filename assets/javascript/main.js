@@ -19,6 +19,13 @@ var portfolioArray = [
 
 var upennArray = [
     {
+        img: "assets/burger.png",
+        description: "An that allows users to choose a burger from the provided list. From there the user can choose to wait to eat it and keep choosing or eating other burgers or devour it.",
+        link:"https://burger-log-14.herokuapp.com/",
+        name: "Burger App",
+        alt: "an image of my burger app"
+    }
+    {
         img: "assets/friend.png",
         description: "A full stack app using JavaScript, Node, and Express. The user takes a quiz and based off their answers a friend (someone else who has also taken the quiz) is generated for them",
         link: "https://friend-finder-14.herokuapp.com/",
