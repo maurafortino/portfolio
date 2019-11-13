@@ -9,7 +9,7 @@ var portfolioArray = [
         frontFace: "illustrations",
         backFace: "click here",
         link: "portfolio-illustrations.html"
-    },
+    }
     // {
     //     frontFace: "events",
     //     backFace: "click here",
