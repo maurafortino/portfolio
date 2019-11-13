@@ -24,7 +24,7 @@ var upennArray = [
         link:"https://burger-log-14.herokuapp.com/",
         name: "Burger App",
         alt: "an image of my burger app"
-    }
+    },
     {
         img: "assets/friend.png",
         description: "A full stack app using JavaScript, Node, and Express. The user takes a quiz and based off their answers a friend (someone else who has also taken the quiz) is generated for them",
